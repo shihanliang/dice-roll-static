@@ -1,0 +1,15 @@
+<p>
+  <a href="/">Home</a> |
+  <a href="/dice/2/6">2d6</a> |
+  <a href="/dice/2/10">2d10</a> |
+  <a href="/dice/1/20">1d20</a> |
+  <a href="/dice/5/4">5d4</a>
+</p>
+
+<h1><%= @num_dice %>d<%= @num_sides %></h1>
+
+<ul>
+  <% @rolls.each do |roll| %>
+    <li><%= roll %></li>
+  <% end %>
+</ul>
